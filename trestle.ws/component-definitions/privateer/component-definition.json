@@ -1,0 +1,2143 @@
+{
+  "component-definition": {
+    "uuid": "87bb8dd3-1d6b-5c1f-91b5-6798cf56a67f",
+    "metadata": {
+      "title": "Component Definition for Privateer (pvtr) Validation",
+      "last-modified": "2026-11-06T16:28:56+00:00",
+      "version": "V1.0",
+      "oscal-version": "1.2.1"
+    },
+    "components": [
+      {
+        "uuid": "93a24daa-1415-5c8e-8f88-c0f87afc018e",
+        "type": "software",
+        "title": "Cloud-Native Platform",
+        "description": "Cloud-Native Platform and Infrastructure Runtime",
+        "purpose": "Platform execution runtime and security controls",
+        "control-implementations": [
+          {
+            "uuid": "c04ceaab-12ee-5cb1-bd79-30b65a2a9b92",
+            "source": "https://github.com/oscal-compass-lab/cncf-controls/catalogs/cncf-controls/catalog.json",
+            "description": "Control implementations evaluated by Privateer (pvtr)",
+            "implemented-requirements": [
+              {
+                "uuid": "9cf2721b-cb87-5554-bb90-d703176bde1f",
+                "control-id": "configuration",
+                "description": "User Configuration Ingestion: Accepts CLI inputs and reads user-provided YAML configuration files to determine runtime behavior for the core CLI and selected plugins",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "privproj_cli_cp01",
+                    "remarks": "rule_set_00"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "User Configuration Ingestion",
+                    "remarks": "rule_set_00"
+                  },
+                  {
+                    "name": "Capability_Group",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "configuration",
+                    "remarks": "rule_set_00"
+                  }
+                ]
+              },
+              {
+                "uuid": "fbd3e12b-bc2a-5e2f-82c8-a5ddd02d82e7",
+                "control-id": "configuration",
+                "description": "Multi-plugin Variable Handling: Manages configuration variables and secrets for all plugins that are executed",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "privproj_cli_cp02",
+                    "remarks": "rule_set_01"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Multi-plugin Variable Handling",
+                    "remarks": "rule_set_01"
+                  },
+                  {
+                    "name": "Capability_Group",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "configuration",
+                    "remarks": "rule_set_01"
+                  }
+                ]
+              },
+              {
+                "uuid": "eb258ac3-bcda-54c4-9224-8cfb05f65fb2",
+                "control-id": "plugin-management",
+                "description": "Plugin Enumeration: Detects plugins available on the local filesystem by searching a well-known or user-defined location",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "privproj_cli_cp03",
+                    "remarks": "rule_set_02"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Plugin Enumeration",
+                    "remarks": "rule_set_02"
+                  },
+                  {
+                    "name": "Capability_Group",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "plugin-management",
+                    "remarks": "rule_set_02"
+                  }
+                ]
+              },
+              {
+                "uuid": "a48d3bf5-7680-59c3-aca5-ceaefb1f887a",
+                "control-id": "plugin-management",
+                "description": "Plugin Execution: Executes one or more plugins as independent sub-processes and directs output to the terminal or filesystem",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "privproj_cli_cp04",
+                    "remarks": "rule_set_03"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Plugin Execution",
+                    "remarks": "rule_set_03"
+                  },
+                  {
+                    "name": "Capability_Group",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "plugin-management",
+                    "remarks": "rule_set_03"
+                  }
+                ]
+              },
+              {
+                "uuid": "3164c4e5-6133-5ffd-acf0-65bdcbe541bd",
+                "control-id": "scaffolding",
+                "description": "Plugin Generation: Automates the generation of plugin scaffolding from Gemara Control Catalogs using the `generate-plugin` command",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "privproj_cli_cp05",
+                    "remarks": "rule_set_04"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Plugin Generation",
+                    "remarks": "rule_set_04"
+                  },
+                  {
+                    "name": "Capability_Group",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "scaffolding",
+                    "remarks": "rule_set_04"
+                  }
+                ]
+              },
+              {
+                "uuid": "7df8b98c-1bd2-54ba-a5df-6337b95aecad",
+                "control-id": "output",
+                "description": "Configurable Log Output: Allows users to adjust the verbosity and location of log outputs",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "privproj_cli_cp06",
+                    "remarks": "rule_set_05"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Configurable Log Output",
+                    "remarks": "rule_set_05"
+                  },
+                  {
+                    "name": "Capability_Group",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "output",
+                    "remarks": "rule_set_05"
+                  }
+                ]
+              },
+              {
+                "uuid": "8eea425e-2410-5490-92f4-3c8578e19273",
+                "control-id": "output",
+                "description": "Configurable Result Output: Allows users to configure the output location for runtime execution results",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "privproj_cli_cp07",
+                    "remarks": "rule_set_06"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Configurable Result Output",
+                    "remarks": "rule_set_06"
+                  },
+                  {
+                    "name": "Capability_Group",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "output",
+                    "remarks": "rule_set_06"
+                  }
+                ]
+              },
+              {
+                "uuid": "c6686ea6-bca1-5826-992b-516955b91460",
+                "control-id": "osps-ac-01",
+                "description": "Use MFA for Sensitive Actions: Use MFA for Sensitive Actions",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_ac_01",
+                    "remarks": "rule_set_07"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Use MFA for Sensitive Actions",
+                    "remarks": "rule_set_07"
+                  }
+                ]
+              },
+              {
+                "uuid": "a0e4d892-6d73-5b2a-9061-eceb006a9e20",
+                "control-id": "osps-ac-02",
+                "description": "Restrict Collaborator Permissions: Restrict Collaborator Permissions",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_ac_02",
+                    "remarks": "rule_set_08"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Restrict Collaborator Permissions",
+                    "remarks": "rule_set_08"
+                  }
+                ]
+              },
+              {
+                "uuid": "0519d65d-217e-5e6f-93c5-e0d95d7338d9",
+                "control-id": "osps-ac-03",
+                "description": "Protect the Primary Branch from Accidental Modification: Protect the Primary Branch from Accidental Modification",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_ac_03",
+                    "remarks": "rule_set_09"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Protect the Primary Branch from Accidental Modification",
+                    "remarks": "rule_set_09"
+                  }
+                ]
+              },
+              {
+                "uuid": "0e2fb808-8fda-5aa6-9e04-423d42a57acc",
+                "control-id": "osps-ac-04",
+                "description": "Enforce Least Privilege on CI/CD Pipelines: Enforce Least Privilege on CI/CD Pipelines",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_ac_04",
+                    "remarks": "rule_set_10"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Enforce Least Privilege on CI/CD Pipelines",
+                    "remarks": "rule_set_10"
+                  }
+                ]
+              },
+              {
+                "uuid": "f88cd00f-2a9c-58e7-9c3d-c6a31f409283",
+                "control-id": "osps-br-01",
+                "description": "Prevent Untrusted Input When Building & Releasing: Prevent Untrusted Input When Building & Releasing",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_br_01",
+                    "remarks": "rule_set_11"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Prevent Untrusted Input When Building & Releasing",
+                    "remarks": "rule_set_11"
+                  }
+                ]
+              },
+              {
+                "uuid": "d772badc-b5e2-5ac9-a8da-08cafe62d21d",
+                "control-id": "osps-br-02",
+                "description": "Assign Unique Version Identifiers: Assign Unique Version Identifiers",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_br_02",
+                    "remarks": "rule_set_12"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Assign Unique Version Identifiers",
+                    "remarks": "rule_set_12"
+                  }
+                ]
+              },
+              {
+                "uuid": "8fd71a0b-f7ed-5b3b-9a3a-17ae776c475b",
+                "control-id": "osps-br-03",
+                "description": "Use Encrypted Channels for Development & Release Activity: Use Encrypted Channels for Development & Release Activity",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_br_03",
+                    "remarks": "rule_set_13"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Use Encrypted Channels for Development & Release Activity",
+                    "remarks": "rule_set_13"
+                  }
+                ]
+              },
+              {
+                "uuid": "6fc446e5-c2d0-5d3e-928f-6abf7651b546",
+                "control-id": "osps-br-04",
+                "description": "Publish Change Log With Release: Publish Change Log With Release",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_br_04",
+                    "remarks": "rule_set_14"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Change Log With Release",
+                    "remarks": "rule_set_14"
+                  }
+                ]
+              },
+              {
+                "uuid": "4edcf871-6cd9-51aa-b98c-83c82269f6cb",
+                "control-id": "osps-br-05",
+                "description": "Use Standardized Dependency Management Tools: Use Standardized Dependency Management Tools",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_br_05",
+                    "remarks": "rule_set_15"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Use Standardized Dependency Management Tools",
+                    "remarks": "rule_set_15"
+                  }
+                ]
+              },
+              {
+                "uuid": "43b96b42-b1ef-5f5a-850a-e606d5f8cb43",
+                "control-id": "osps-br-06",
+                "description": "Include Signatures and Hashes With Release: Include Signatures and Hashes With Release",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_br_06",
+                    "remarks": "rule_set_16"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Include Signatures and Hashes With Release",
+                    "remarks": "rule_set_16"
+                  }
+                ]
+              },
+              {
+                "uuid": "509f26a4-c062-5784-988f-6b3f01972e4d",
+                "control-id": "osps-br-07",
+                "description": "Secure Secrets and Credentials: Secure Secrets and Credentials",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_br_07",
+                    "remarks": "rule_set_17"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Secure Secrets and Credentials",
+                    "remarks": "rule_set_17"
+                  }
+                ]
+              },
+              {
+                "uuid": "e7325f17-fdf2-5002-b685-276e69326e30",
+                "control-id": "osps-do-01",
+                "description": "Publish User Guides for Basic Functionality: Publish User Guides for Basic Functionality",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_do_01",
+                    "remarks": "rule_set_18"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish User Guides for Basic Functionality",
+                    "remarks": "rule_set_18"
+                  }
+                ]
+              },
+              {
+                "uuid": "57e0c4fb-06c3-5038-ae62-32629df2abb9",
+                "control-id": "osps-do-02",
+                "description": "Provide Mechanisms for Reporting Defects: Provide Mechanisms for Reporting Defects",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_do_02",
+                    "remarks": "rule_set_19"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Provide Mechanisms for Reporting Defects",
+                    "remarks": "rule_set_19"
+                  }
+                ]
+              },
+              {
+                "uuid": "538222b3-08ca-52e9-a071-04e759f8492b",
+                "control-id": "osps-do-03",
+                "description": "Publish Provenance Verification Instructions: Publish Provenance Verification Instructions",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_do_03",
+                    "remarks": "rule_set_20"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Provenance Verification Instructions",
+                    "remarks": "rule_set_20"
+                  }
+                ]
+              },
+              {
+                "uuid": "e32d1d44-9aea-5944-b4ee-adc0810c6574",
+                "control-id": "osps-do-04",
+                "description": "Publish Support Scope and Duration: Publish Support Scope and Duration",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_do_04",
+                    "remarks": "rule_set_21"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Support Scope and Duration",
+                    "remarks": "rule_set_21"
+                  }
+                ]
+              },
+              {
+                "uuid": "31fda209-562b-590f-bb46-6d721a046e28",
+                "control-id": "osps-do-05",
+                "description": "Document Security Update Scope and Duration: Document Security Update Scope and Duration",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_do_05",
+                    "remarks": "rule_set_22"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Document Security Update Scope and Duration",
+                    "remarks": "rule_set_22"
+                  }
+                ]
+              },
+              {
+                "uuid": "69cf8848-f2e0-55fa-b270-1d0f4d20adf7",
+                "control-id": "osps-do-06",
+                "description": "Publish Dependency Management Policy: Publish Dependency Management Policy",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_do_06",
+                    "remarks": "rule_set_23"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Dependency Management Policy",
+                    "remarks": "rule_set_23"
+                  }
+                ]
+              },
+              {
+                "uuid": "3ef7f3b2-7559-5715-82a8-fbd5150dffcb",
+                "control-id": "osps-do-07",
+                "description": "Provide Instructions on How to Build From Source: Provide Instructions on How to Build From Source",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_do_07",
+                    "remarks": "rule_set_24"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Provide Instructions on How to Build From Source",
+                    "remarks": "rule_set_24"
+                  }
+                ]
+              },
+              {
+                "uuid": "4a7ae811-adfd-5576-8e08-c1f306cbcdcb",
+                "control-id": "osps-gv-01",
+                "description": "Publish Project Roles and Responsibilities: Publish Project Roles and Responsibilities",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_gv_01",
+                    "remarks": "rule_set_25"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Project Roles and Responsibilities",
+                    "remarks": "rule_set_25"
+                  }
+                ]
+              },
+              {
+                "uuid": "1617f3d4-b68c-56bd-a3a1-bf1d0ae08f65",
+                "control-id": "osps-gv-02",
+                "description": "Provide Public Discussion Mechanisms: Provide Public Discussion Mechanisms",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_gv_02",
+                    "remarks": "rule_set_26"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Provide Public Discussion Mechanisms",
+                    "remarks": "rule_set_26"
+                  }
+                ]
+              },
+              {
+                "uuid": "61b312f8-1e59-5260-b135-78b440307397",
+                "control-id": "osps-gv-03",
+                "description": "Publish Contribution Guide: Publish Contribution Guide",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_gv_03",
+                    "remarks": "rule_set_27"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Contribution Guide",
+                    "remarks": "rule_set_27"
+                  }
+                ]
+              },
+              {
+                "uuid": "915007f8-8597-5396-acec-6192f928f43b",
+                "control-id": "osps-gv-04",
+                "description": "Require Formal Review of Permission Grants: Require Formal Review of Permission Grants",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_gv_04",
+                    "remarks": "rule_set_28"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Require Formal Review of Permission Grants",
+                    "remarks": "rule_set_28"
+                  }
+                ]
+              },
+              {
+                "uuid": "9abd616a-e6e9-5752-af51-f8013783629f",
+                "control-id": "osps-le-01",
+                "description": "Require Code Contributors to Assert Right to Commit: Require Code Contributors to Assert Right to Commit",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_le_01",
+                    "remarks": "rule_set_29"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Require Code Contributors to Assert Right to Commit",
+                    "remarks": "rule_set_29"
+                  }
+                ]
+              },
+              {
+                "uuid": "11640fb7-0d4b-5fbd-8bf2-602b0fbfc1c9",
+                "control-id": "osps-le-02",
+                "description": "Ensure Project Licenses are Fully Open Source: Ensure Project Licenses are Fully Open Source",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_le_02",
+                    "remarks": "rule_set_30"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Ensure Project Licenses are Fully Open Source",
+                    "remarks": "rule_set_30"
+                  }
+                ]
+              },
+              {
+                "uuid": "ecc3960e-f20e-59c0-b25a-9a18acdfbb64",
+                "control-id": "osps-le-03",
+                "description": "Maintain and Release Licenses in a Well Known Location: Maintain and Release Licenses in a Well Known Location",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_le_03",
+                    "remarks": "rule_set_31"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Maintain and Release Licenses in a Well Known Location",
+                    "remarks": "rule_set_31"
+                  }
+                ]
+              },
+              {
+                "uuid": "e826ea38-5737-5b0d-a55d-e4feac90706f",
+                "control-id": "osps-qa-01",
+                "description": "Publish Source Code and Change History: Publish Source Code and Change History",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_qa_01",
+                    "remarks": "rule_set_32"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Source Code and Change History",
+                    "remarks": "rule_set_32"
+                  }
+                ]
+              },
+              {
+                "uuid": "b70e4929-e80b-5f9e-9f54-84c173ac8d6e",
+                "control-id": "osps-qa-02",
+                "description": "Publish Software Dependencies: Publish Software Dependencies",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_qa_02",
+                    "remarks": "rule_set_33"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Software Dependencies",
+                    "remarks": "rule_set_33"
+                  }
+                ]
+              },
+              {
+                "uuid": "1092accc-9080-5e8a-9f95-c1c26160ecfa",
+                "control-id": "osps-qa-03",
+                "description": "Address Pass/Fail Checks Before Accepting Changes: Address Pass/Fail Checks Before Accepting Changes",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_qa_03",
+                    "remarks": "rule_set_34"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Address Pass/Fail Checks Before Accepting Changes",
+                    "remarks": "rule_set_34"
+                  }
+                ]
+              },
+              {
+                "uuid": "27c68ad3-ea1b-5e0c-a6c0-595c2a1cef10",
+                "control-id": "osps-qa-04",
+                "description": "Enforce Security Requirements on All Codebases: Enforce Security Requirements on All Codebases",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_qa_04",
+                    "remarks": "rule_set_35"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Enforce Security Requirements on All Codebases",
+                    "remarks": "rule_set_35"
+                  }
+                ]
+              },
+              {
+                "uuid": "855ab1aa-0d19-58e8-9d72-a2be3fb7c0d5",
+                "control-id": "osps-qa-05",
+                "description": "Prevent Executables in the Codebase: Prevent Executables in the Codebase",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_qa_05",
+                    "remarks": "rule_set_36"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Prevent Executables in the Codebase",
+                    "remarks": "rule_set_36"
+                  }
+                ]
+              },
+              {
+                "uuid": "b4fea298-6a97-5d52-afcd-e1079653c19c",
+                "control-id": "osps-qa-06",
+                "description": "Use Automated Testing in CI/CD Pipelines: Use Automated Testing in CI/CD Pipelines",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_qa_06",
+                    "remarks": "rule_set_37"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Use Automated Testing in CI/CD Pipelines",
+                    "remarks": "rule_set_37"
+                  }
+                ]
+              },
+              {
+                "uuid": "bb4c71b3-e867-5390-8ee5-2da50773adb3",
+                "control-id": "osps-qa-07",
+                "description": "Require Merge Approvals: Require Merge Approvals",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_qa_07",
+                    "remarks": "rule_set_38"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Require Merge Approvals",
+                    "remarks": "rule_set_38"
+                  }
+                ]
+              },
+              {
+                "uuid": "f5fb256d-4d9d-5b4f-9b4c-ee5882e2e299",
+                "control-id": "osps-sa-01",
+                "description": "Publish Design Descriptions of System Actors and Actions: Publish Design Descriptions of System Actors and Actions",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_sa_01",
+                    "remarks": "rule_set_39"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Design Descriptions of System Actors and Actions",
+                    "remarks": "rule_set_39"
+                  }
+                ]
+              },
+              {
+                "uuid": "bc3754ec-df63-5c8e-91c2-ab6e2a754f6d",
+                "control-id": "osps-sa-02",
+                "description": "Publish External Interface Descriptions: Publish External Interface Descriptions",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_sa_02",
+                    "remarks": "rule_set_40"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish External Interface Descriptions",
+                    "remarks": "rule_set_40"
+                  }
+                ]
+              },
+              {
+                "uuid": "7fa5f67f-0f34-551e-9836-1180942c1923",
+                "control-id": "osps-sa-03",
+                "description": "Maintain a Project Security Assessment: Maintain a Project Security Assessment",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_sa_03",
+                    "remarks": "rule_set_41"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Maintain a Project Security Assessment",
+                    "remarks": "rule_set_41"
+                  }
+                ]
+              },
+              {
+                "uuid": "dbed684b-6507-51e4-8d4b-f66aa4175e56",
+                "control-id": "osps-vm-01",
+                "description": "Publish Coordinated Vulnerability Disclosure Policy: Publish Coordinated Vulnerability Disclosure Policy",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_vm_01",
+                    "remarks": "rule_set_42"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Coordinated Vulnerability Disclosure Policy",
+                    "remarks": "rule_set_42"
+                  }
+                ]
+              },
+              {
+                "uuid": "8dc23289-a88b-5b72-a31c-3c90a73add18",
+                "control-id": "osps-vm-02",
+                "description": "Publish Contacts and Process for Reporting Vulnerabilities.: Publish Contacts and Process for Reporting Vulnerabilities.",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_vm_02",
+                    "remarks": "rule_set_43"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Contacts and Process for Reporting Vulnerabilities.",
+                    "remarks": "rule_set_43"
+                  }
+                ]
+              },
+              {
+                "uuid": "26411ff9-6133-5278-88c6-5e52ce9edfe9",
+                "control-id": "osps-vm-03",
+                "description": "Maintain Private Vulnerability Reporting Process: Maintain Private Vulnerability Reporting Process",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_vm_03",
+                    "remarks": "rule_set_44"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Maintain Private Vulnerability Reporting Process",
+                    "remarks": "rule_set_44"
+                  }
+                ]
+              },
+              {
+                "uuid": "31d51d9f-84e4-522f-9a20-7df3ac0767c6",
+                "control-id": "osps-vm-04",
+                "description": "Publish Discovered Vulnerabilities: Publish Discovered Vulnerabilities",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_vm_04",
+                    "remarks": "rule_set_45"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish Discovered Vulnerabilities",
+                    "remarks": "rule_set_45"
+                  }
+                ]
+              },
+              {
+                "uuid": "f0eb3000-fdb2-51cf-9043-9d86e745860f",
+                "control-id": "osps-vm-05",
+                "description": "Publish and Enforce a Dependency Remediation Policy: Publish and Enforce a Dependency Remediation Policy",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_vm_05",
+                    "remarks": "rule_set_46"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish and Enforce a Dependency Remediation Policy",
+                    "remarks": "rule_set_46"
+                  }
+                ]
+              },
+              {
+                "uuid": "1975f3d6-ecb6-5e28-8cf6-e531cc753587",
+                "control-id": "osps-vm-06",
+                "description": "Publish and Enforce an Application Security Testing Policy: Publish and Enforce an Application Security Testing Policy",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "rule_osps_vm_06",
+                    "remarks": "rule_set_47"
+                  },
+                  {
+                    "name": "Rule_Description",
+                    "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+                    "value": "Publish and Enforce an Application Security Testing Policy",
+                    "remarks": "rule_set_47"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "40b71d69-cdf3-56dc-8470-79f3108a2487",
+        "type": "validation",
+        "title": "privateer",
+        "description": "Privateer (pvtr) validation test framework",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "privproj_cli_cp01",
+            "remarks": "check_set_00"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "PrivProj.CLI.CP01",
+            "remarks": "check_set_00"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Accepts CLI inputs and reads user-provided YAML configuration files to determine runtime behavior for the core CLI and selected plugins",
+            "remarks": "check_set_00"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Privateer CLI",
+            "remarks": "check_set_00"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "privproj_cli_cp02",
+            "remarks": "check_set_01"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "PrivProj.CLI.CP02",
+            "remarks": "check_set_01"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Manages configuration variables and secrets for all plugins that are executed",
+            "remarks": "check_set_01"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Privateer CLI",
+            "remarks": "check_set_01"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "privproj_cli_cp03",
+            "remarks": "check_set_02"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "PrivProj.CLI.CP03",
+            "remarks": "check_set_02"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Detects plugins available on the local filesystem by searching a well-known or user-defined location",
+            "remarks": "check_set_02"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Privateer CLI",
+            "remarks": "check_set_02"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "privproj_cli_cp04",
+            "remarks": "check_set_03"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "PrivProj.CLI.CP04",
+            "remarks": "check_set_03"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Executes one or more plugins as independent sub-processes and directs output to the terminal or filesystem",
+            "remarks": "check_set_03"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Privateer CLI",
+            "remarks": "check_set_03"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "privproj_cli_cp05",
+            "remarks": "check_set_04"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "PrivProj.CLI.CP05",
+            "remarks": "check_set_04"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Automates the generation of plugin scaffolding from Gemara Control Catalogs using the `generate-plugin` command",
+            "remarks": "check_set_04"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Privateer CLI",
+            "remarks": "check_set_04"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "privproj_cli_cp06",
+            "remarks": "check_set_05"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "PrivProj.CLI.CP06",
+            "remarks": "check_set_05"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Allows users to adjust the verbosity and location of log outputs",
+            "remarks": "check_set_05"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Privateer CLI",
+            "remarks": "check_set_05"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "privproj_cli_cp07",
+            "remarks": "check_set_06"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "PrivProj.CLI.CP07",
+            "remarks": "check_set_06"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Allows users to configure the output location for runtime execution results",
+            "remarks": "check_set_06"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Privateer CLI",
+            "remarks": "check_set_06"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_ac_01",
+            "remarks": "check_set_07"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-ac-01",
+            "remarks": "check_set_07"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Use MFA for Sensitive Actions",
+            "remarks": "check_set_07"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_07"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_ac_02",
+            "remarks": "check_set_08"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-ac-02",
+            "remarks": "check_set_08"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Restrict Collaborator Permissions",
+            "remarks": "check_set_08"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_08"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_ac_03",
+            "remarks": "check_set_09"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-ac-03",
+            "remarks": "check_set_09"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Protect the Primary Branch from Accidental Modification",
+            "remarks": "check_set_09"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_09"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_ac_04",
+            "remarks": "check_set_10"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-ac-04",
+            "remarks": "check_set_10"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Enforce Least Privilege on CI/CD Pipelines",
+            "remarks": "check_set_10"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_10"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_br_01",
+            "remarks": "check_set_11"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-br-01",
+            "remarks": "check_set_11"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Prevent Untrusted Input When Building & Releasing",
+            "remarks": "check_set_11"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_11"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_br_02",
+            "remarks": "check_set_12"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-br-02",
+            "remarks": "check_set_12"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Assign Unique Version Identifiers",
+            "remarks": "check_set_12"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_12"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_br_03",
+            "remarks": "check_set_13"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-br-03",
+            "remarks": "check_set_13"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Use Encrypted Channels for Development & Release Activity",
+            "remarks": "check_set_13"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_13"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_br_04",
+            "remarks": "check_set_14"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-br-04",
+            "remarks": "check_set_14"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Change Log With Release",
+            "remarks": "check_set_14"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_14"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_br_05",
+            "remarks": "check_set_15"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-br-05",
+            "remarks": "check_set_15"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Use Standardized Dependency Management Tools",
+            "remarks": "check_set_15"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_15"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_br_06",
+            "remarks": "check_set_16"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-br-06",
+            "remarks": "check_set_16"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Include Signatures and Hashes With Release",
+            "remarks": "check_set_16"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_16"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_br_07",
+            "remarks": "check_set_17"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-br-07",
+            "remarks": "check_set_17"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Secure Secrets and Credentials",
+            "remarks": "check_set_17"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_17"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_do_01",
+            "remarks": "check_set_18"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-do-01",
+            "remarks": "check_set_18"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish User Guides for Basic Functionality",
+            "remarks": "check_set_18"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_18"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_do_02",
+            "remarks": "check_set_19"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-do-02",
+            "remarks": "check_set_19"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Provide Mechanisms for Reporting Defects",
+            "remarks": "check_set_19"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_19"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_do_03",
+            "remarks": "check_set_20"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-do-03",
+            "remarks": "check_set_20"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Provenance Verification Instructions",
+            "remarks": "check_set_20"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_20"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_do_04",
+            "remarks": "check_set_21"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-do-04",
+            "remarks": "check_set_21"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Support Scope and Duration",
+            "remarks": "check_set_21"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_21"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_do_05",
+            "remarks": "check_set_22"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-do-05",
+            "remarks": "check_set_22"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Document Security Update Scope and Duration",
+            "remarks": "check_set_22"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_22"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_do_06",
+            "remarks": "check_set_23"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-do-06",
+            "remarks": "check_set_23"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Dependency Management Policy",
+            "remarks": "check_set_23"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_23"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_do_07",
+            "remarks": "check_set_24"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-do-07",
+            "remarks": "check_set_24"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Provide Instructions on How to Build From Source",
+            "remarks": "check_set_24"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_24"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_gv_01",
+            "remarks": "check_set_25"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-gv-01",
+            "remarks": "check_set_25"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Project Roles and Responsibilities",
+            "remarks": "check_set_25"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_25"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_gv_02",
+            "remarks": "check_set_26"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-gv-02",
+            "remarks": "check_set_26"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Provide Public Discussion Mechanisms",
+            "remarks": "check_set_26"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_26"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_gv_03",
+            "remarks": "check_set_27"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-gv-03",
+            "remarks": "check_set_27"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Contribution Guide",
+            "remarks": "check_set_27"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_27"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_gv_04",
+            "remarks": "check_set_28"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-gv-04",
+            "remarks": "check_set_28"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Require Formal Review of Permission Grants",
+            "remarks": "check_set_28"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_28"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_le_01",
+            "remarks": "check_set_29"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-le-01",
+            "remarks": "check_set_29"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Require Code Contributors to Assert Right to Commit",
+            "remarks": "check_set_29"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_29"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_le_02",
+            "remarks": "check_set_30"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-le-02",
+            "remarks": "check_set_30"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Ensure Project Licenses are Fully Open Source",
+            "remarks": "check_set_30"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_30"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_le_03",
+            "remarks": "check_set_31"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-le-03",
+            "remarks": "check_set_31"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Maintain and Release Licenses in a Well Known Location",
+            "remarks": "check_set_31"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_31"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_qa_01",
+            "remarks": "check_set_32"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-qa-01",
+            "remarks": "check_set_32"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Source Code and Change History",
+            "remarks": "check_set_32"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_32"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_qa_02",
+            "remarks": "check_set_33"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-qa-02",
+            "remarks": "check_set_33"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Software Dependencies",
+            "remarks": "check_set_33"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_33"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_qa_03",
+            "remarks": "check_set_34"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-qa-03",
+            "remarks": "check_set_34"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Address Pass/Fail Checks Before Accepting Changes",
+            "remarks": "check_set_34"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_34"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_qa_04",
+            "remarks": "check_set_35"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-qa-04",
+            "remarks": "check_set_35"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Enforce Security Requirements on All Codebases",
+            "remarks": "check_set_35"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_35"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_qa_05",
+            "remarks": "check_set_36"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-qa-05",
+            "remarks": "check_set_36"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Prevent Executables in the Codebase",
+            "remarks": "check_set_36"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_36"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_qa_06",
+            "remarks": "check_set_37"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-qa-06",
+            "remarks": "check_set_37"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Use Automated Testing in CI/CD Pipelines",
+            "remarks": "check_set_37"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_37"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_qa_07",
+            "remarks": "check_set_38"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-qa-07",
+            "remarks": "check_set_38"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Require Merge Approvals",
+            "remarks": "check_set_38"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_38"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_sa_01",
+            "remarks": "check_set_39"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-sa-01",
+            "remarks": "check_set_39"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Design Descriptions of System Actors and Actions",
+            "remarks": "check_set_39"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_39"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_sa_02",
+            "remarks": "check_set_40"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-sa-02",
+            "remarks": "check_set_40"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish External Interface Descriptions",
+            "remarks": "check_set_40"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_40"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_sa_03",
+            "remarks": "check_set_41"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-sa-03",
+            "remarks": "check_set_41"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Maintain a Project Security Assessment",
+            "remarks": "check_set_41"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_41"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_vm_01",
+            "remarks": "check_set_42"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-vm-01",
+            "remarks": "check_set_42"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Coordinated Vulnerability Disclosure Policy",
+            "remarks": "check_set_42"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_42"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_vm_02",
+            "remarks": "check_set_43"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-vm-02",
+            "remarks": "check_set_43"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Contacts and Process for Reporting Vulnerabilities.",
+            "remarks": "check_set_43"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_43"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_vm_03",
+            "remarks": "check_set_44"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-vm-03",
+            "remarks": "check_set_44"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Maintain Private Vulnerability Reporting Process",
+            "remarks": "check_set_44"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_44"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_vm_04",
+            "remarks": "check_set_45"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-vm-04",
+            "remarks": "check_set_45"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish Discovered Vulnerabilities",
+            "remarks": "check_set_45"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_45"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_vm_05",
+            "remarks": "check_set_46"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-vm-05",
+            "remarks": "check_set_46"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish and Enforce a Dependency Remediation Policy",
+            "remarks": "check_set_46"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_46"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "rule_osps_vm_06",
+            "remarks": "check_set_47"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "check_osps-vm-06",
+            "remarks": "check_set_47"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Validates Publish and Enforce an Application Security Testing Policy",
+            "remarks": "check_set_47"
+          },
+          {
+            "name": "Target_Component",
+            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
+            "value": "Cloud-Native Platform",
+            "remarks": "check_set_47"
+          }
+        ]
+      }
+    ]
+  }
+}
